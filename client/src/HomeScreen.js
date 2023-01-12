@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import axios from "axios";
 import my_picture from "./my_picture.jpg";
+import MyNavBar from "./MyNavBar"
 import "./home.css";
 
 function HomeScreen() {
@@ -17,24 +18,18 @@ function HomeScreen() {
   }, []);*/
   return (
     <>
-      <ButtonGroup
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Button className="button-23">Home</Button>
-        <Button className="button-23">Resume</Button>
-        <Button className="button-23">My Favorite Things</Button>
-        <Button className="button-23">Blog</Button>
-        <Button className="button-23">Contact Me</Button>
-      </ButtonGroup>
+    <MyNavBar/>
       <br/>
       <br/>
       <div id="center">
       <img className="img" src={my_picture}/>
       </div>
+      <br />
+      <h1>Emily Tian</h1>
+      <div>Hi I'm Emily. I'm currently a master's student at the University of Sydney majoring in software engineering.👩🏻‍💻</div>
+      <div>Like most people, I enjoy watching TV shows and movies in my spare time. I like reading as well.</div>
+      <div>To see what I've been watching or reading lately, you can add me on Letterboxd or Goodreads!</div>
+      <div>Feel free to reach out to me for work opportunities on Linkedin 😃</div>
     </>
   );
 }
