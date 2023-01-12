@@ -27,7 +27,6 @@ function MyNavBar() {
         <Button className="button-52">Resume</Button>
         <Button className="button-52">My Favorite Things</Button>
         <Button className="button-52">Blog</Button>
-        <Button className="button-52">Contact Me</Button>
       </ButtonGroup>
     </>
   );
