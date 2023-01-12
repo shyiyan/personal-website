@@ -1,21 +1,20 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate, BrowserRouter } from "react-router-dom";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import axios from "axios";
-import logo from "./logo.svg";
-import "./App.css";
+import my_picture from "./my_picture.jpg";
+import "./home.css";
 
 function HomeScreen() {
-  const [message, setMessage] = useState("");
   const navigate = useNavigate();
-  const getData = async () => {
+  /*const getData = async () => {
     const res = await axios.get("http://localhost:3000/profile");
     setMessage(res.data.message);
   };
   useEffect(() => {
     getData();
-  }, []);
+  }, []);*/
   return (
     <>
       <ButtonGroup
@@ -31,6 +30,11 @@ function HomeScreen() {
         <Button className="button-23">Blog</Button>
         <Button className="button-23">Contact Me</Button>
       </ButtonGroup>
+      <br/>
+      <br/>
+      <div id="center">
+      <img className="img" src={my_picture}/>
+      </div>
     </>
   );
 }
