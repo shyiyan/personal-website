@@ -31,6 +31,7 @@ function HomeScreen() {
       <div>To see what I've been watching or reading lately, you can add me on Letterboxd or Goodreads!</div>
       <div>Feel free to reach out to me for work opportunities on Linkedin 😃</div>
       <br />
+      <br />
       <a href="https://www.linkedin.com/in/shyi-yan-tian-7479b1207/">
       <FaLinkedin />
       </a>
