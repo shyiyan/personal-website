@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
 import axios from "axios";
 import my_picture from "./my_picture.jpg";
 import MyNavBar from "./MyNavBar"
 import "./home.css";
+import { FaLinkedin, FaGoodreadsG, FaTv } from "react-icons/fa";
+import { SiLetterboxd } from "react-icons/si";
 
 function HomeScreen() {
   const navigate = useNavigate();
@@ -30,6 +30,16 @@ function HomeScreen() {
       <div>Like most people, I enjoy watching TV shows and movies in my spare time. I like reading as well.</div>
       <div>To see what I've been watching or reading lately, you can add me on Letterboxd or Goodreads!</div>
       <div>Feel free to reach out to me for work opportunities on Linkedin 😃</div>
+      <br />
+      <a href="https://www.linkedin.com/in/shyi-yan-tian-7479b1207/">
+      <FaLinkedin />
+      </a>
+      <a href="https://www.goodreads.com/user/show/26531134-emily">
+      <FaGoodreadsG />
+      </a>
+      <a href="https://letterboxd.com/shyiyan/">
+      <SiLetterboxd />
+      </a>
     </>
   );
 }
