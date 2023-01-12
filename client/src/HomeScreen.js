@@ -8,7 +8,7 @@ import "./App.css";
 
 function HomeScreen() {
   const [message, setMessage] = useState("");
-  //const navigate = useNavigate();
+  const navigate = useNavigate();
   const getData = async () => {
     const res = await axios.get("http://localhost:3000/profile");
     setMessage(res.data.message);
@@ -18,7 +18,19 @@ function HomeScreen() {
   }, []);
   return (
     <>
-    <div>yo</div>
+      <ButtonGroup
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Button className="button-23">Home</Button>
+        <Button className="button-23">Resume</Button>
+        <Button className="button-23">My Favorite Things</Button>
+        <Button className="button-23">Blog</Button>
+        <Button className="button-23">Contact Me</Button>
+      </ButtonGroup>
     </>
   );
 }
